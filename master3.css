@@ -1,0 +1,54 @@
+.parent{
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas:
+        "h h h"
+        "s1 m s2"
+        "f f f ";
+    gap: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+.header{
+grid-area: h;
+background-color: rgb(89, 0, 255);
+}
+.sid1{
+    grid-area: s1;
+    background-color: red;
+
+}
+.main{
+    grid-area: m;
+    background-color: rgb(222, 120, 11);
+
+}
+.sid2{
+    grid-area: s2;
+    background-color: red;
+
+}
+.footer{
+    grid-area: f;
+    background-color: rgb(38, 0, 255);
+
+}
+@media(max-width:599.999999px){
+.parent{
+    grid-template-rows: 10% repeat(3 ,auto) 10%;
+    grid-template-areas:
+    "h h h"
+    "s1 s1 s1"
+    "m m m "
+    "s2 s2 s2"
+    "f f f";
+
+}
+
+   
+
+
+
+}

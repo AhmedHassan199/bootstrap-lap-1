@@ -1,0 +1,45 @@
+.parent1{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    background-color: #a9a9a959;
+    font-size: 27px;
+    width: 80%;
+}
+.parent2{
+    display: flex;
+    margin: auto;
+    background-color:white;
+    width: 70%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.p3,
+.p4{
+    border: solid black;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.p3 .f,
+.p4 .f {
+    background-color: #a9a9a963;
+}
+@media(max-width:583px){
+
+    .parent1{
+        flex-direction: column;
+        align-items: center;    
+    }
+    .parent2{flex-direction: column;
+        align-items: center;
+    }
+   .p3{
+    margin-bottom: 10px;
+   }
+}
